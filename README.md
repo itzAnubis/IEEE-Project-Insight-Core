@@ -27,19 +27,18 @@ We use Python 3.10. Please follow these steps exactly to avoid "it works on my m
 ```bash
 # 1. Clone the repo
 git clone https://github.com/itzAnubis/IEEE-Project-Insight-Core.git
-
 cd IEEE-Project-Insight-Core
 
-# 2. Create Virtual Environment
-# Option A: Using uv (Fastest)
+# 2. Create Virtual Environment & Install Dependencies
+
+# Option A: Using uv (Recommended & Fastest)
 uv venv --python 3.10
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+uv pip install -r requirements.txt
 
 # Option B: Standard Python
 python3.10 -m venv venv
 source venv/bin/activate
-
-# 3. Install Dependencies
 pip install -r requirements.txt
 ```
 
