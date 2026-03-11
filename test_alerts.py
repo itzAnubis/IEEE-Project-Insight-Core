@@ -1,10 +1,6 @@
-from alerts.health_check import run_health_check
-dummy_report = {
-    "transcription": {"full_transcript": ""},
-    "diarization_stats": {"total_segments": 0},
-    "summary": "Skipped due to error."
-}
+from alerts.alerts_integration import monitor_system
+mic_status = "unavailable"
+vision_data = None
+nlp_data = None
 
-status = run_health_check("unavailable", dummy_report)
-
-print("System Healthy?" , status)
+monitor_system(mic_status, vision_data, nlp_data)
