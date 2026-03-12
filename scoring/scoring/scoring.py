@@ -19,3 +19,18 @@ def calculate_interaction(hand_raises, attention_ratio, questions_asked):
 
 def calculate_final_score(engagement, clarity, interaction):
     return (0.4 * engagement) + (0.3 * clarity) + (0.3 * interaction)
+def generate_insights(engagement, clarity, interaction):
+    final_score = calculate_final_score(engagement, clarity, interaction)
+    if final_score >= 0.8:
+        insight = "Excellent engagement and participation"
+    elif final_score >= 0.6:
+        insight = "Good lecture but interaction could improve"
+    else:
+        insight = "Low engagement detected"
+    return {
+        "engagement": engagement,
+        "clarity": clarity,
+        "interaction": interaction,
+        "final_score": final_score,
+        "insight": insight
+    }
