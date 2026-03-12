@@ -166,19 +166,33 @@ class SmartClassroomSystem:
             
             annotated_frame = self.label_annotator.annotate(scene=annotated_frame, detections=detections, labels=labels)
             
+            # Draw semi-transparent background for OSD (Micro-UX Improvement)
+            overlay = annotated_frame.copy()
+            cv2.rectangle(overlay, (5, 5), (330, 185), (0, 0, 0), -1)
+            cv2.addWeighted(overlay, 0.6, annotated_frame, 0.4, 0, annotated_frame)
+
+            # Determine status color (Micro-UX Improvement)
+            status_colors = {
+                "Focused": (0, 255, 0),    # Green
+                "Sleeping": (0, 0, 255),   # Red
+                "Phone Use": (0, 255, 255), # Yellow
+                "Unknown": (200, 200, 200)  # Grey
+            }
+            status_color = status_colors.get(instructor_status, (0, 255, 0))
+
             # Overlay Info
             info = [
-                f"FPS: {int(1/(time.time()-current_time+0.001))}", # Approx FPS
-                f"Total People: {total_people} (Every 60s)",
-                f"Instructor ID: {self.instructor_id}",
-                f"Head Pitch: {pitch_angle:.1f}",
-                f"Status: {instructor_status}",
-                f"PID Out: Pan={pan_adj:.1f}, Tilt={tilt_adj:.1f}"
+                (f"FPS: {int(1/(time.time()-current_time+0.001))}", (0, 255, 0)),
+                (f"Total People: {total_people} (Every 60s)", (0, 255, 0)),
+                (f"Instructor ID: {self.instructor_id}", (0, 255, 0)),
+                (f"Head Pitch: {pitch_angle:.1f}", (0, 255, 0)),
+                (f"Status: {instructor_status}", status_color),
+                (f"PID Out: Pan={pan_adj:.1f}, Tilt={tilt_adj:.1f}", (0, 255, 0))
             ]
             
-            for i, text in enumerate(info):
+            for i, (text, color) in enumerate(info):
                 cv2.putText(annotated_frame, text, (10, 30 + i*25), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
 
             # --- STEP 6: JSON Stream Output (Demiana) ---
             # This is the data structure sent to other squads/backend
