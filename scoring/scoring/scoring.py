@@ -34,3 +34,17 @@ def generate_insights(engagement, clarity, interaction):
         "final_score": final_score,
         "insight": insight
     }
+def compute_final_score(engagement, clarity, interaction):
+    """
+    Compute the final score based on engagement, clarity, and interaction.
+
+    Parameters:
+        engagement (float): Score for engagement (0-1)
+        clarity (float): Score for clarity (0-1)
+        interaction (float): Score for interaction (0-1)
+
+    Returns:
+        float: final score between 0 and 1
+    """
+    final_score = 0.4 * engagement + 0.3 * clarity + 0.3 * interaction
+    return final_score
