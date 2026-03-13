@@ -151,7 +151,7 @@ class SmartClassroomSystem:
             if instructor_bbox is not None:
                 pan_adj, tilt_adj = self.pid_controller.update(instructor_bbox, w, h)
 
-            # --- STEP 5: Visualization (Demiana) ---
+            # --- STEP 5: Visualization (Demiana & Palette) ---
             # Draw all people
             annotated_frame = self.box_annotator.annotate(scene=frame.copy(), detections=detections)
             
@@ -166,19 +166,34 @@ class SmartClassroomSystem:
             
             annotated_frame = self.label_annotator.annotate(scene=annotated_frame, detections=detections, labels=labels)
             
+            # Palette: UI/UX Enhancement - Semi-transparent background for better text contrast
+            overlay = annotated_frame.copy()
+            cv2.rectangle(overlay, (5, 5), (310, 210), (0, 0, 0), -1)
+            cv2.addWeighted(overlay, 0.5, annotated_frame, 0.5, 0, annotated_frame)
+
+            # Palette: Color-coded status for immediate feedback
+            status_colors = {
+                "Focused": (0, 255, 0),    # Green
+                "Sleeping": (0, 0, 255),   # Red
+                "Phone Use": (0, 165, 255) # Orange
+            }
+            status_color = status_colors.get(instructor_status, (255, 255, 255))
+
             # Overlay Info
             info = [
-                f"FPS: {int(1/(time.time()-current_time+0.001))}", # Approx FPS
-                f"Total People: {total_people} (Every 60s)",
-                f"Instructor ID: {self.instructor_id}",
-                f"Head Pitch: {pitch_angle:.1f}",
-                f"Status: {instructor_status}",
-                f"PID Out: Pan={pan_adj:.1f}, Tilt={tilt_adj:.1f}"
+                (f"FPS: {int(1/(time.time()-current_time+0.001))}", (0, 255, 0)),
+                (f"Total People: {total_people}", (0, 255, 0)),
+                (f"Instructor ID: {self.instructor_id}", (0, 255, 0)),
+                (f"Head Pitch: {pitch_angle:.1f}", (0, 255, 0)),
+                (f"Status: {instructor_status}", status_color),
+                (f"PID: P={pan_adj:.1f}, T={tilt_adj:.1f}", (0, 255, 0)),
+                ("-" * 25, (200, 200, 200)),
+                ("Press 'Q' to Quit", (255, 255, 255))
             ]
             
-            for i, text in enumerate(info):
-                cv2.putText(annotated_frame, text, (10, 30 + i*25), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+            for i, (text, color) in enumerate(info):
+                cv2.putText(annotated_frame, text, (15, 30 + i*22),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.55, color, 1 if i > 5 else 2)
 
             # --- STEP 6: JSON Stream Output (Demiana) ---
             # This is the data structure sent to other squads/backend
