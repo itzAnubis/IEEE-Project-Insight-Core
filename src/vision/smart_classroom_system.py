@@ -176,6 +176,11 @@ class SmartClassroomSystem:
                 f"PID Out: Pan={pan_adj:.1f}, Tilt={tilt_adj:.1f}"
             ]
             
+            # Create a dark semi-transparent background for the HUD (UX improvement for legibility)
+            overlay = annotated_frame.copy()
+            cv2.rectangle(overlay, (5, 5), (330, 175), (0, 0, 0), -1)
+            cv2.addWeighted(overlay, 0.5, annotated_frame, 0.5, 0, annotated_frame)
+
             for i, text in enumerate(info):
                 cv2.putText(annotated_frame, text, (10, 30 + i*25), 
                             cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
