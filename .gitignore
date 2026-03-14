@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .venv
 
 .vscode/
@@ -6,3 +7,5 @@ venv/
 __pycache__/
 *.pyc
 *.db
+=======
+>>>>>>> ba55b7532f50bbbc3fdf4c0a5c3d8dbcbcc2246c
