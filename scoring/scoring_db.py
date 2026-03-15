@@ -1,7 +1,9 @@
 import sqlite3
 from scoring.scoring import calculate_final_score
+
 conn = sqlite3.connect("scores_database.db")
 cursor = conn.cursor()
+
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS scores (
     Id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -13,6 +15,7 @@ CREATE TABLE IF NOT EXISTS scores (
 )
 """)
 conn.commit()
+
 def insert_score(insight_id, engagement, clarity, interaction):
     final_score = calculate_final_score(engagement, clarity, interaction)
     cursor.execute("""
@@ -20,7 +23,8 @@ def insert_score(insight_id, engagement, clarity, interaction):
     VALUES (?, ?, ?, ?, ?)
     """, (insight_id, engagement, clarity, interaction, final_score))
     conn.commit()
-    print("Score inserted successfully!")
+    print(f"Score inserted successfully for insight_id={insight_id}")
+
 if __name__ == "__main__":
-    insert_score(1,0.7,0.8,0.6)
+    insert_score(1, 0.7, 0.8, 0.65)
     conn.close()

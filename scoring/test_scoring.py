@@ -1,32 +1,21 @@
-from scoring.scoring import (
-    calculate_hand_raise_score,
-    calculate_head_pose_score,
-    calculate_qa_participation_score,
-    calculate_interaction,
-    calculate_final_score
-)
+# scoring/test_scoring.py
+from scoring.scoring import calculate_head_pose_score, calculate_interaction, calculate_final_score
 
-def test_hand_raise():
-    result = calculate_hand_raise_score(3, 5)
-    expected = 3 / 5
-    assert result == expected
-
-def test_head_pose():
+def test_head_pose_score():
     result = calculate_head_pose_score(0.8)
     assert 0 <= result <= 1
 
-def test_qa_participation():
-    result = calculate_qa_participation_score(2, 4)
-    expected = 2 / 4
-    assert result == expected
-
-def test_interaction():
-    result = calculate_interaction(3, 0.8, 2)
+def test_interaction_score():
+    result = calculate_interaction(0.75)
     assert 0 <= result <= 1
 
 def test_final_score():
-    interaction = calculate_interaction(3, 0.8, 2)
-    result = calculate_final_score(0.7, 0.6, interaction)
+    interaction = calculate_interaction(0.75)
+    result = calculate_final_score(0.7, 0.8, interaction)
     assert 0 <= result <= 1
 
-print("All tests passed successfully!")
+if __name__ == "__main__":
+    test_head_pose_score()
+    test_interaction_score()
+    test_final_score()
+    print("All tests passed successfully!")

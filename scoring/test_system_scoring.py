@@ -1,22 +1,26 @@
-from scoring.scoring import calculate_hand_raise_score, calculate_head_pose_score, calculate_qa_participation_score, calculate_interaction, calculate_final_score, generate_insights
+from scoring.scoring_from_json import score_from_json
 import sqlite3
+
 conn = sqlite3.connect("scores_database.db")
 cursor = conn.cursor()
-def test_system_data():
+
+def test_system_json():
     system_data = [
-        {"insight_id": 101, "hand_raises": 3, "attention_ratio": 0.9, "questions_asked": 2, "engagement": 0.7, "clarity": 0.8},
-        {"insight_id": 102, "hand_raises": 1, "attention_ratio": 0.6, "questions_asked": 1, "engagement": 0.5, "clarity": 0.6},
-        {"insight_id": 103, "hand_raises": 4, "attention_ratio": 1.0, "questions_asked": 3, "engagement": 0.9, "clarity": 0.9}
+        {"insight_id": 101, "instructor": {"head_pitch": 10, "status": "Active"}, "environment": {"total_people_count": 18}},
+        {"insight_id": 102, "instructor": {"head_pitch": 20, "status": "Active"}, "environment": {"total_people_count": 25}},
+        {"insight_id": 103, "instructor": {"head_pitch": 5, "status": "Active"}, "environment": {"total_people_count": 10}},
     ]
+
     for data in system_data:
-        interaction = calculate_interaction(data["hand_raises"], data["attention_ratio"], data["questions_asked"])
-        final_score = calculate_final_score(data["engagement"], data["clarity"], interaction)
+        scores = score_from_json(data)
         cursor.execute("""
             INSERT INTO scores (insight_id, engagement, clarity, interaction, final_score)
             VALUES (?, ?, ?, ?, ?)
-        """, (data["insight_id"], data["engagement"], data["clarity"], interaction, final_score))
+        """, (data["insight_id"], scores["engagement"], scores["clarity"], scores["interaction"], scores["final_score"]))
+
     conn.commit()
-    print("System data tested and scores inserted successfully!")
+    print("System JSON tested and scores inserted successfully!")
+
 if __name__ == "__main__":
-    test_system_data()
+    test_system_json()
     conn.close()
