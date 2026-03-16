@@ -151,7 +151,7 @@ class SmartClassroomSystem:
             if instructor_bbox is not None:
                 pan_adj, tilt_adj = self.pid_controller.update(instructor_bbox, w, h)
 
-            # --- STEP 5: Visualization (Demiana) ---
+            # --- STEP 5: Visualization (Demiana & Palette) ---
             # Draw all people
             annotated_frame = self.box_annotator.annotate(scene=frame.copy(), detections=detections)
             
@@ -166,6 +166,11 @@ class SmartClassroomSystem:
             
             annotated_frame = self.label_annotator.annotate(scene=annotated_frame, detections=detections, labels=labels)
             
+            # 🎨 Palette: Add semi-transparent background for better legibility
+            overlay = annotated_frame.copy()
+            cv2.rectangle(overlay, (5, 5), (380, 185), (0, 0, 0), -1)
+            cv2.addWeighted(overlay, 0.5, annotated_frame, 0.5, 0, annotated_frame)
+
             # Overlay Info
             info = [
                 f"FPS: {int(1/(time.time()-current_time+0.001))}", # Approx FPS
@@ -177,8 +182,16 @@ class SmartClassroomSystem:
             ]
             
             for i, text in enumerate(info):
+                # 🎨 Palette: Use color-coding for glanceability
+                color = (0, 255, 0) # Green for most info
+                if "Status:" in text:
+                    if instructor_status == "Focused":
+                        color = (0, 255, 0) # Green
+                    elif instructor_status in ["Sleeping", "Phone Use"]:
+                        color = (0, 0, 255) # Red
+
                 cv2.putText(annotated_frame, text, (10, 30 + i*25), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
 
             # --- STEP 6: JSON Stream Output (Demiana) ---
             # This is the data structure sent to other squads/backend
