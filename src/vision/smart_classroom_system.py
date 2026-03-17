@@ -176,9 +176,22 @@ class SmartClassroomSystem:
                 f"PID Out: Pan={pan_adj:.1f}, Tilt={tilt_adj:.1f}"
             ]
             
+            # Draw semi-transparent background for info
+            overlay = annotated_frame.copy()
+            cv2.rectangle(overlay, (5, 5), (320, 30 + len(info)*25), (0, 0, 0), -1)
+            cv2.addWeighted(overlay, 0.5, annotated_frame, 0.5, 0, annotated_frame)
+
             for i, text in enumerate(info):
+                # Default color is green (Focused)
+                color = (0, 255, 0)
+
+                # Check status for color-coding the status line
+                if "Status:" in text:
+                    if "Sleeping" in text or "Phone Use" in text:
+                        color = (0, 0, 255) # Red for alerts
+
                 cv2.putText(annotated_frame, text, (10, 30 + i*25), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
 
             # --- STEP 6: JSON Stream Output (Demiana) ---
             # This is the data structure sent to other squads/backend
