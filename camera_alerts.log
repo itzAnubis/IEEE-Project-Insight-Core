@@ -1,0 +1,296 @@
+2026-03-19 09:26:56,167 - INFO - System started for Camera CAM_001
+2026-03-19 09:26:56,167 - INFO - Camera CAM_001 is active
+2026-03-19 09:26:57,167 - INFO - Camera CAM_001 is active
+2026-03-19 09:26:58,168 - INFO - Camera CAM_001 is active
+2026-03-19 09:26:59,168 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:00,169 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:01,169 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:02,169 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:03,170 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:04,170 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:05,170 - WARNING - Camera CAM_001 blocked
+2026-03-19 09:27:06,171 - WARNING - Camera CAM_001 blocked
+2026-03-19 09:27:07,171 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:08,171 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:09,172 - WARNING - Camera CAM_001 stopped during runtime
+2026-03-19 09:27:10,172 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:11,172 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:12,173 - WARNING - Camera CAM_001 stopped during runtime
+2026-03-19 09:27:13,173 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:14,173 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:15,174 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:16,174 - ERROR - Camera CAM_001 disconnected
+2026-03-19 09:27:17,175 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:18,175 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:19,175 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:20,176 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:21,176 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:22,177 - WARNING - Camera CAM_001 stopped during runtime
+2026-03-19 09:27:23,177 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:24,177 - ERROR - Camera CAM_001 disconnected
+2026-03-19 09:27:25,178 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:26,178 - INFO - System stopped for Camera CAM_001
+2026-03-19 09:27:39,317 - INFO - Stability test started for Camera CAM_001
+2026-03-19 09:27:39,317 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:40,318 - WARNING - Camera CAM_001 blocked
+2026-03-19 09:27:41,318 - WARNING - Camera CAM_001 stopped during runtime
+2026-03-19 09:27:42,318 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:43,319 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:44,319 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:45,320 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:46,320 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:47,320 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:48,321 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:49,321 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:50,321 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:51,322 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:52,322 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:53,322 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:54,323 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:55,323 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:56,323 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:57,324 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:58,324 - INFO - Camera CAM_001 is active
+2026-03-19 09:27:59,324 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:00,325 - ERROR - Camera CAM_001 disconnected
+2026-03-19 09:28:01,325 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:02,325 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:03,326 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:04,326 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:05,326 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:06,327 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:07,327 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:08,327 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:09,328 - WARNING - Camera CAM_001 blocked
+2026-03-19 09:28:10,328 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:11,329 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:12,329 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:13,329 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:14,329 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:15,330 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:16,330 - ERROR - Camera CAM_001 disconnected
+2026-03-19 09:28:17,330 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:18,331 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:19,331 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:20,332 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:21,332 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:22,332 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:23,332 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:24,333 - ERROR - Camera CAM_001 disconnected
+2026-03-19 09:28:25,333 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:26,334 - WARNING - Camera CAM_001 blocked
+2026-03-19 09:28:27,334 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:28,334 - INFO - Camera CAM_001 is active
+2026-03-19 09:28:29,335 - WARNING - Camera CAM_001 blocked
+2026-03-19 09:28:30,335 - INFO - Camera CAM_001 is active
+2026-03-19 15:34:53,164 - INFO - Stability test started for Camera CAM_001
+2026-03-19 15:34:53,164 - INFO - Camera CAM_001 is active
+2026-03-19 15:34:54,166 - INFO - Camera CAM_001 is active
+2026-03-19 15:34:55,167 - INFO - Camera CAM_001 is active
+2026-03-19 15:34:56,168 - INFO - Camera CAM_001 is active
+2026-03-19 15:34:57,169 - INFO - Camera CAM_001 is active
+2026-03-19 15:34:58,170 - INFO - Camera CAM_001 is active
+2026-03-19 15:34:59,171 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:00,172 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:01,173 - ERROR - Camera CAM_001 disconnected
+2026-03-19 15:35:02,174 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:03,175 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:04,176 - WARNING - Camera CAM_001 blocked
+2026-03-19 15:35:05,177 - WARNING - Camera CAM_001 blocked
+2026-03-19 15:35:06,178 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:07,179 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:08,180 - ERROR - Camera CAM_001 disconnected
+2026-03-19 15:35:09,181 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:10,182 - WARNING - Camera CAM_001 stopped during runtime
+2026-03-19 15:35:11,183 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:12,184 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:13,185 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:14,186 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:15,186 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:16,188 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:17,189 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:18,190 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:19,190 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:20,191 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:21,192 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:22,193 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:23,194 - WARNING - Camera CAM_001 blocked
+2026-03-19 15:35:24,195 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:25,204 - ERROR - Camera CAM_001 disconnected
+2026-03-19 15:35:26,207 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:27,208 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:28,209 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:29,210 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:30,211 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:31,212 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:32,216 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:33,283 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:34,284 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:35,286 - WARNING - Camera CAM_001 blocked
+2026-03-19 15:35:36,288 - WARNING - Camera CAM_001 stopped during runtime
+2026-03-19 15:35:37,289 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:38,290 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:39,291 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:40,292 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:41,294 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:42,294 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:43,295 - WARNING - Camera CAM_001 stopped during runtime
+2026-03-19 15:35:44,297 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:45,297 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:46,298 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:47,300 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:48,303 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:49,305 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:50,358 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:51,364 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:52,371 - INFO - Camera CAM_001 is active
+2026-03-19 15:35:53,372 - INFO - System stopped for Camera CAM_001
+2026-03-19 15:42:57,608 - INFO - System started for Camera 0
+2026-03-19 15:42:58,528 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:42:58,838 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:42:59,518 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:01,815 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:02,581 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:02,995 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:03,289 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:03,602 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:03,783 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:04,099 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:04,492 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:05,943 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:05,991 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:05,991 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:06,492 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:07,500 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:07,520 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:07,602 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:07,796 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:08,060 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:08,616 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:09,590 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:09,603 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:10,114 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:10,204 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:10,306 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:10,405 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:10,506 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:10,806 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:11,219 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:11,890 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:14,201 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:15,874 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:16,359 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:18,205 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:19,076 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:20,955 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:20,967 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:21,090 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:21,242 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:21,293 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:21,880 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:23,636 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:24,012 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:26,316 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:28,245 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:29,097 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:30,078 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:31,613 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:32,283 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:34,039 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:34,169 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:34,227 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:34,239 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:34,314 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:35,059 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,064 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:35,070 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,077 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,084 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,093 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:35,101 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,106 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,108 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,114 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,125 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,129 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,134 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,134 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,141 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,147 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,147 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,155 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,157 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,157 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,164 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,173 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,178 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,182 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,183 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,183 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,187 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,194 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,195 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,203 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,211 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,214 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,214 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,214 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,222 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,224 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,230 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,230 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,230 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,246 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,247 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,247 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,259 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,260 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:35,264 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,275 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,279 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,279 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,279 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,292 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,293 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,299 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,302 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,305 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,308 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,310 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:35,310 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,323 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,327 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,330 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,339 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,341 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,345 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,345 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,353 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,357 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:35,360 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:37,495 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:37,570 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:38,065 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:38,557 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:38,557 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:38,575 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:39,671 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:40,062 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:40,263 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:40,677 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:41,871 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:42,168 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:42,273 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:42,455 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:43,055 - ERROR - ERROR: Camera disconnected
+2026-03-19 15:43:45,508 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:45,596 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:45,997 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:47,804 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:49,003 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:49,212 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:49,404 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:49,613 - WARNING - WARNING: Camera blocked
+2026-03-19 15:43:50,914 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:50,920 - WARNING - WARNING: Camera stopped during runtime
+2026-03-19 15:43:51,697 - ERROR - ERROR: Camera disconnected
