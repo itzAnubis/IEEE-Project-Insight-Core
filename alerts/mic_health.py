@@ -1,18 +1,9 @@
 import logging
 
-def check_mic(mic_status: str) -> bool:
-    """
-    Checks microphone status.
-    Returns True if mic is healthy, False otherwise.
-    """
+def check_mic(is_available: bool) -> bool:
+    if not is_available:
+        logging.warning("Microphone unplugged")
+        return False   # مهم جدًا
 
-    if mic_status == "unavailable":
-        logging.error("Mic Issue: Microphone Unavailable")
-        return False
-
-    elif mic_status == "muted":
-        logging.warning("Mic Issue: Microphone Muted")
-        return True
-
-    logging.info("Mic Status: Working Properly")
+    logging.info("Microphone is working")
     return True

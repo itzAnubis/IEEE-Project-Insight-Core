@@ -1,0 +1,14 @@
+2026-03-21 11:26:12,614 - ERROR - WARNING: Microphone unplugged
+2026-03-21 11:26:12,614 - WARNING - WARNING: Microphone muted
+2026-03-21 11:26:12,614 - ERROR - ERROR: Audio stream stopped
+2026-03-21 11:26:12,614 - ERROR - ERROR: Missing Vision data
+2026-03-21 11:26:12,614 - ERROR - ERROR: Missing NLP data
+2026-03-21 11:26:12,615 - INFO - Vision data is working
+2026-03-21 11:26:12,615 - INFO - NLP data is working
+2026-03-21 11:29:27,290 - ERROR - Mic unplugged
+2026-03-21 11:29:27,290 - WARNING - Mic muted
+2026-03-21 11:29:27,290 - ERROR - Audio stream stopped
+2026-03-21 11:29:27,291 - ERROR - Missing Vision data
+2026-03-21 11:29:27,292 - ERROR - Missing NLP data
+2026-03-21 11:29:27,292 - INFO - Vision data is working
+2026-03-21 11:29:27,292 - INFO - NLP data is working
