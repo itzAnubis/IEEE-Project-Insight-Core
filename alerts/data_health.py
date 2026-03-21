@@ -1,30 +1,22 @@
 import logging
 
-def check_data(report: dict) -> bool:
+def check_data(vision_data: bool, nlp_data: bool) -> bool:
     """
-    Checks NLP pipeline output integrity.
-    Returns True if data looks valid, False otherwise.
+    Checks if Vision and NLP modules are sending data.
+    Returns True if both are working, False otherwise.
     """
 
     system_ok = True
 
-    # Check transcription
-    if "transcription" not in report:
-        logging.error("Data Issue: Missing Transcription Output")
+    if not vision_data:
+        logging.error("Missing Vision data")
         system_ok = False
-    else:
-        transcript = report["transcription"].get("full_transcript", "")
-        if not transcript:
-            logging.error("Data Issue: Empty Transcript")
-            system_ok = False
 
-    # Check diarization
-    diar_stats = report.get("diarization_stats", {})
-    if diar_stats.get("total_segments", 0) == 0:
-        logging.warning("Data Issue: No Speaker Segments Detected")
+    if not nlp_data:
+        logging.error("Missing NLP data")
+        system_ok = False
 
-    # Check summary
-    if report.get("summary") == "Skipped due to error.":
-        logging.warning("Data Issue: Summarization Failed")
+    if system_ok:
+        logging.info("All data streams are working")
 
     return system_ok

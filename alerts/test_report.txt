@@ -1,0 +1,19 @@
+Test Report - Alerts System
+
+1. Mic Simulation Tests:
+- Mic unplugged → Logged as ERROR
+- Mic muted → Logged as WARNING
+- Audio stopped → Logged as ERROR
+
+2. Data Simulation Tests:
+- Vision stopped → Logged as ERROR
+- NLP stopped → Logged as ERROR
+- Both active → Logged as INFO
+
+3. Logging Verification:
+- Logs are correctly stored in alerts_logs.log
+- Severity levels (INFO, WARNING, ERROR) are properly assigned
+- All simulated failures are captured successfully
+
+Conclusion:
+The system successfully detects microphone and data issues and logs them correctly.
